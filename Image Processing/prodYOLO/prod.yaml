@@ -1,0 +1,7 @@
+path: C:\Users\alt_user\Desktop\prodYOLO\prodAugmented
+train: 'train/images'
+val: 'test/images'
+ 
+# class names
+names: 
+  0: 'cancer'

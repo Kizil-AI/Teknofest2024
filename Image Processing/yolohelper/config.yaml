@@ -1,0 +1,7 @@
+path: C:/Users/alt_user/Desktop/yolohelper/YOLO_withoutclassification/
+train: train/images
+val: test/images
+
+
+names:
+  0: thing

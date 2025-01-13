@@ -1,0 +1,10 @@
+*.pt
+*.png
+*.cache
+*.pkl
+*.pth
+*.jpg
+*.txt
+labelsCsv.csv
+description.csv
+*.h5
