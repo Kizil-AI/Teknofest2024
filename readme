@@ -13,11 +13,9 @@ Kodlar tamamen kod temelli çalışmakta olup, kullanıcı arayüzü veya ekstra
 
 ## İçerik
 
-- **Image Processing**: Mamografi görüntülerinden kitle ve kalsifikasyon tespiti için modelleri içeren dosya.
-- **Natural Language Processing**: Doğal dil işleme ile Bi-RADS tespiti modellerini içeren dosya.
-- **README.md**: Proje hakkında genel bilgiler ve kullanım detayları.
-
-## Kurulum
+- **Image Processing:** Mamografi görüntülerinden kitle ve kalsifikasyon tespiti için modelleri içeren dosyalar.
+- **Natural Language Processing:** Doğal dil işleme ile BI-RADS tespiti modellerini içeren dosyalar.
+- **README.md:** Proje hakkında genel bilgiler ve kullanım detayları.
 
 
 ## Katkıda Bulunma
