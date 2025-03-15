@@ -1,36 +1,47 @@
+```markdown
 # Teknofest 2024 AI in Healthcare Competition Code
 
-Bu repository, geçen sene 5 kişilik bir takım tarafından Teknofest Sağlıkta Yapay Zeka yarışması kapsamında geliştirilen modellerin kodlarını içermektedir. Projede, mamografi görüntülerinden kalsifikasyon ve kitle tespiti yapılmasının yanı sıra, doğal dil işleme teknikleri kullanılarak BI-RADS sınıflandırması gerçekleştirilmiştir.
+Bu repository, Teknofest Sağlıkta Yapay Zeka Yarışması kapsamında 5 kişilik bir takım tarafından geliştirilen modellerin kodlarını içermektedir. Mamografi görüntülerinden kalsifikasyon ve kitle tespiti ile rapor metinlerinden BI-RADS sınıflandırması yapan çift modüllü bir sistem içerir.
 
 ## Proje Hakkında
 
-Projemizde iki temel modül yer almaktadır:
+### Temel Modüller
+1. **Görüntü İşleme Modülü**  
+   Mamografi görüntülerinde:
+   - Kalsifikasyon tespiti
+   - Kitle tespiti
+   - Anomali lokalizasyonu
 
-- **Görüntü İşleme Modülü:** Mamografi görüntülerinde kalsifikasyon ve kitle tespiti yapabilen modeller.
-- **Doğal Dil İşleme (NLP) Modülü:** Raporlardaki metin verilerini analiz ederek BI-RADS tespiti gerçekleştiren modeller.
+2. **Doğal Dil İşleme (NLP) Modülü**  
+   Rapor metinlerinde:
+   - BI-RADS kategorizasyonu
+   - Klinik terim tanıma
+   - Çoklu-etiket sınıflandırma
 
-Kodlar tamamen kod temelli çalışmakta olup, kullanıcı arayüzü veya ekstra entegrasyonlar içermemektedir. Yarışma sırasında kullanılan veriler yarışmaya özgü olduğu için bu repository içerisinde yer almamaktadır.
-
-## İçerik
-
-- **Image Processing:** Mamografi görüntülerinden kitle ve kalsifikasyon tespiti için modelleri içeren dosyalar.
-- **Natural Language Processing:** Doğal dil işleme ile BI-RADS tespiti modellerini içeren dosyalar.
-- **README.md:** Proje hakkında genel bilgiler ve kullanım detayları.
+## Teknik Özellikler
+- **Platform**: Python 3.8+
+- **ML Framework**: TensorFlow/Keras,
+- **NLP Araçları**: BERT-tabanlı modeller
+- **Görüntü İşleme**: CNN mimarileri (YOLO, RCNN), pytorch
 
 
-## Katkıda Bulunma
+## Kurulum
+1. Repository klonlama:
+   ```bash
+   git clone https://github.com/Kizil-AI/Teknofest2024
+   ```
 
-Projeye katkıda bulunmak veya geliştirmeler önermek isterseniz, lütfen yeni özellik veya düzeltme önerilerinizi pull request olarak gönderin ya da issue açarak görüşlerinizi paylaşın.
+> **Not:** Yarışma veri seti lisans kısıtlamaları nedeniyle repository'de bulunmamaktadır. Kendi veri setinizle kullanmak için veri yollarını güncellemeniz gerekmektedir.
 
-## Lisans
-
-Bu kod, Teknofest yarışması kapsamında geliştirilmiştir. Lisans detayları için lütfen `LICENSE` dosyasına bakınız.
-
-## Notlar
-
-- **Veri Seti:** Yarışmaya özgü veriler kullanıldığı için bu repository'ye dahil edilmemiştir.
-- **Proje Değeri:** Yarışmada finale kalamasak da, geliştirdiğimiz modeller ve deneyimler, yapay zeka tabanlı sağlık çözümleri geliştirme sürecinde önemli geri bildirimler sunmaktadır.
-
----
-
+## Katkı Rehberi
 Bu README, projeyi hem geliştiriciler hem de ilgi duyan kullanıcılar için anlaşılır kılmayı amaçlamaktadır. Herhangi bir sorunuz veya katkı öneriniz olursa, lütfen iletişime geçmekten çekinmeyin.
+
+## Önemli Notlar
+- **Performans Metrikleri**:
+  - Görüntü Sınıflandırma:
+    -YOLO: 0.51 F1-Score
+    -RCNN: 0.535 F1-Score
+    -Ensemble: 0.617 F1-Score
+  -Bi-RADS Sınıflandırması: 0.91 F1-Score 
+  - NLP Modeli: 0.92 F1-Score
+---
