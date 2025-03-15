@@ -1,7 +1,7 @@
 
 # Teknofest 2024 AI in Healthcare Competition Code
 
-Bu repository, Teknofest Sağlıkta Yapay Zeka Yarışması kapsamında 5 kişilik bir takım tarafından geliştirilen modellerin kodlarını içermektedir. Mamografi görüntülerinden kalsifikasyon ve kitle tespiti ile rapor metinlerinden BI-RADS sınıflandırması yapan çift modüllü bir sistem içerir.
+Bu repository, Teknofest Sağlıkta Yapay Zeka Yarışması kapsamında 5 kişilik takımımız tarafından geliştirilen modellerin kodlarını içermektedir. Mamografi görüntülerinden kalsifikasyon ve kitle tespiti ile rapor metinlerinden BI-RADS sınıflandırması yapan çift modüllü bir sistem içerir.
 
 ## Proje Hakkında
 
